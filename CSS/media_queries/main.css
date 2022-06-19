@@ -17,3 +17,41 @@ ul,li{
   margin:0;
   padding:0;
 }
+
+
+@media (max-width:2000px){
+  h1{
+    color:#87CEFA;
+  }
+  a{
+    color:#87CEFA;
+  }
+}
+
+@media (max-width:1500px){
+  h1{
+    color:yellow;
+  }
+  a{
+    color:yellow;
+  }
+}
+
+@media (max-width:1000px){
+  h1{
+    color:orange;
+  }
+  a{
+    color:orange;
+  }
+}
+
+@media (max-width:500px){
+  h1{
+    color:purple;
+  }
+  a{
+    color:#4B1883;
+  }
+}
+
