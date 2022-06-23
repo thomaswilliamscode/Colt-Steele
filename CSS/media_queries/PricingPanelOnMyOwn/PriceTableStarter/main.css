@@ -49,34 +49,137 @@ table {
 
 /*---------------------------------------------------------------*/
 
+*{
+  color:#87cefa;
+}
+
+/*  -- set up fonts and border box  --  */
+
+html{
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*  -- set blue background for body, and align  --  */
+
 body{
   background-color: #3C7FF1;
   display:flex;
   justify-content:center;
   align-items:center;
   min-height:100vh;
+  line-height:1;
 }
+
+
+/*  -- set up panel display   --  */
 
 .panel {
   background-color:white;
+  border-radius:10px;
   display:flex;
   justify-content:center;
   align-items:center;
-  border-radius:10px;
+  padding:15px 25px;
+  max-width:960px;
+  width:100%;
+  text-transform:uppercase;
+  text-align:center;
 }
+
+/*  -- divide sections in panel and style  --  */
 
 .pricing-plan{
   border-right:1px solid #3c7ff1;
+  padding:25px 50px;
+}
+.pricing-plan:last-child{
+  border-right:none;
+}
+
+/*  -- style img --  */
+
+.pricing-plan img{
+  max-width:100%;
+  margin-bottom:25px;
+}
+
+
+/*  -- style header in pricing-plan  --  */
+
+.pricing-plan h2{
+  color:#888;
+  font-weight:600;
+  letter-spacing: 1px;
 }
 
 
 
+/*  -- padding and border to ul's  --  */
+
+.pricing-features {
+  margin:50px 0 25px;
+}
 
 
+/*  -- give padding and border to li's  --  */
 
+.pricing-features-item {
+  font-weight:600;
+  letter-spacing:1px;
+  font-size:12px;
+  line-heaight:1.5;
+  padding:15px 0;
+  border-top:1px solid #e1f1ff;
+}
 
+/*  -- border-bottom on last child li --  */
 
+.pricing-features-item:last-child{
+  border-bottom:2px solid #e1f1ff;
+}
 
+/*  -- Free styles  --  */
+
+.pricing-price{
+  color:#016ff9;
+  display:block;
+  font-size:32px;
+  font-weight:700;
+}
+
+/*  -- button styles  --  */
+
+.pricing-button{
+  border:1px solid #9dd1ff;
+  border-radius: 10px;
+  color:#348efe;
+  display:inline-block;
+  padding:15px 35px;
+  text-decoration:none;
+  margin:25px 0;
+  transition:background-color 200ms ease-in-out;
+}
+
+/*  -- button hover --  */
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+  background-color:#269aff;
+  color:white;
+}
+
+/*  -- media --  */
+
+@media (max-width:1000px){
+  .panel{
+    flex-direction:column;
+  }
+  .pricing-plan{
+    border-bottom:1px solid #e1f1ff;
+    border-right:none;
+  }
+  
+}
 
 
 
